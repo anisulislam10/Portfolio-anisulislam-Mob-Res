@@ -72,6 +72,7 @@
       font-size: 1.1em;
   }
   /* mobile styles */
+  
   .grid{
       display: grid;
       grid-template-columns: repeat(8,1fr);
@@ -97,6 +98,7 @@
   }
   .welcome-img{
       grid-column: 6/9;
+
   }
   .welcome-img img{
       width: 200%;
@@ -331,10 +333,23 @@
           /* padding-top: -500px; */
           padding-bottom: 60px;
           box-sizing: border-box;
+          
         }
         .welcome-text {
          margin-top: -170px;
          margin-left: 50px;
+         background-color: #17179c56;
+         border-radius: 15px;
+         padding-top: 0px;
+         text-align: center;
+
+        }
+        .welcome-text h2{
+          /* background-color: #9893D8; */
+          color: #FFC636;
+          text-align: left;
+          padding-left: 40px;
+          border-bottom: 3px solid var(--primary);
         }
         .welcome-img{
           margin-top: -120px;
@@ -519,4 +534,6 @@
         }
       }
 
+  @media screen and (min-width: 1200px) {
 
+  }
