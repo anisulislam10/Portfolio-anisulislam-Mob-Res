@@ -267,6 +267,8 @@
 
     .welcome-image {
       grid-column: 5/9;
+      /* margin-right: -500px; */
+background-color: #bfc0ff;
     }
 
     .welcome-image img {
@@ -416,6 +418,35 @@
   font-size: 14px;
   font-weight: bolder;
         } 
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          margin-top: 4px;
+      }
+
+      .tooltip .tooltiptext {
+          visibility: hidden;
+        
+          width: 600px;
+          background-color: rgb(37, 65, 194);
+          color: #fff;
+          text-align: start;
+          border-radius: 5px;
+          padding: 5px 5px;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%; /* Position above the text */
+          left: 50%;
+          margin-left: -70px;
+          opacity: 0;
+          transition: opacity 0.3s;
+      }
+
+      .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+      }
         /* Navbar Styles */
         .site-nav {
           padding: 0 20px;
